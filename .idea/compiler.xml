@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo-consumer-hello" />
+        <module name="demo-consumer-hello-feign" />
+        <module name="demo-consumer-hello-ribbon" />
+        <module name="demo-consumer-hello-ribbon-hystrix" />
+        <module name="demo-eureka-server" />
+        <module name="demo-provider-hello" />
+        <module name="springcloud-demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo-consumer-hello" target="1.8" />
+      <module name="demo-consumer-hello-feign" target="1.8" />
+      <module name="demo-consumer-hello-ribbon" target="1.8" />
+      <module name="demo-consumer-hello-ribbon-hystrix" target="1.8" />
+      <module name="demo-eureka-server" target="1.8" />
+      <module name="demo-provider-hello" target="1.8" />
+      <module name="springcloud-demo" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
