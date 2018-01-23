@@ -15,6 +15,7 @@
         <module>demo-consumer-hello-ribbon-hystrix</module>
         <module>demo-consumer-hello</module>
         <module>demo-consumer-hello-feign</module>
+        <module>demo-provider-hello</module>
     </modules>
 
 </project>
