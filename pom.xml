@@ -8,5 +8,13 @@
     <artifactId>springcloud-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>demo-eureka-server</module>
+        <module>demo-consumer-hello</module>
+        <module>demo-consumer-hello-ribbon</module>
+        <module>demo-consumer-hello-ribbon-hystrix</module>
+        <module>demo-consumer-hello</module>
+        <module>demo-consumer-hello-feign</module>
+    </modules>
 
 </project>
