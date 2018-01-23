@@ -11,11 +11,14 @@
     <modules>
         <module>demo-eureka-server</module>
         <module>demo-consumer-hello</module>
+        <module>demo-consumer-hello2</module>
         <module>demo-consumer-hello-ribbon</module>
         <module>demo-consumer-hello-ribbon-hystrix</module>
         <module>demo-consumer-hello</module>
         <module>demo-consumer-hello-feign</module>
         <module>demo-provider-hello</module>
+        <module>demo-provider-hello2</module>
+        <module>demo-zuul</module>
     </modules>
 
 </project>

@@ -1,4 +1,4 @@
-package cn.v5cn.springcloud.demoproviderhello.controller;
+package cn.v5cn.springcloud.demoproviderhello2.controller;
 
 import com.google.common.collect.ImmutableMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 
 @RestController
-@RequestMapping("/hello")
+@RequestMapping("/hello2")
 public class HelloController {
 
     @GetMapping("/index")
