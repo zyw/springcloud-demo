@@ -15,9 +15,10 @@ public class SyncProducer {
     public static void main(String[] args) {
         try {
             DefaultMQProducer producer = new DefaultMQProducer("nsop-test");
-            producer.setNamesrvAddr("154.8.143.230:9876");
+            producer.setNamesrvAddr("localhost:9876");
             producer.start();
-            for (int i = 0; i < 5; i++) {
+
+            for(int i = 0; i < 10; i++) {
                 Message message = new Message("TopicTest"/*Topic*/,
                         "TagA"/*Tag*/,
                         ("Hello RocketMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET)/*Message body*/);

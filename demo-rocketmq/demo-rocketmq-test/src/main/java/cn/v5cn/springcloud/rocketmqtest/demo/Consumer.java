@@ -12,7 +12,7 @@ import java.util.List;
 public class Consumer {
     public static void main(String[] args) throws MQClientException {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("nsop-test");
-        consumer.setNamesrvAddr("154.8.143.230:9876");
+        consumer.setNamesrvAddr("localhost:9876");
         consumer.subscribe("TopicTest","*");
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
