@@ -20,6 +20,8 @@
         <module>demo-provider-hello</module>
         <module>demo-provider-hello2</module>
         <module>demo-zuul</module>
+        <module>demo-authserver</module>
+        <module>demo-rocketmq</module>
         <module>demo-mybatis-plus-generator</module>
     </modules>
 
