@@ -51,17 +51,17 @@ public class CodeGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/nsop_polypay?useUnicode=true&useSSL=false&characterEncoding=utf8");
+        dsc.setUrl("jdbc:mysql://47.92.235.185:3306/gas_meter_dev?useUnicode=true&characterEncoding=UTF-8&useSSL=false");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("root");
+        dsc.setPassword("gas_meter");
         mpg.setDataSource(dsc);
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setModuleName("polypay");
-        pc.setParent("com.mydao.nsop");
+        pc.setModuleName("gasmeter");
+        pc.setParent("cn.v5cn");
         mpg.setPackageInfo(pc);
 
         // 自定义配置
@@ -93,7 +93,7 @@ public class CodeGenerator {
         strategy.setRestControllerStyle(true);
         strategy.setEntityBuilderModel(true);
         //strategy.setSuperControllerClass("com.baomidou.ant.common.BaseController");
-        strategy.setInclude("pay_channel","pay_mch_info","pay_mch_notify","pay_order","pay_refund_order","pay_user_contract");
+        strategy.setInclude("basic_subscribe_notify");
         //strategy.setExclude("");
         //strategy.setSuperEntityColumns("id");
         strategy.setControllerMappingHyphenStyle(true);
